@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tab_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Basic Info"
+                android:textColor="@drawable/selector_txt"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,SmallSp"
+                android:checked="true" />
+
+
+
+            <RadioButton
+                android:id="@+id/tab_analyse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Question"
+                android:textColor="@drawable/selector_txt"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,SmallSp" />
+            <RadioButton
+                android:id="@+id/tab_jihua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Compare"
+                android:textColor="@drawable/selector_txt"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText,SmallSp" />
+
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E1E1E1" />
+        <com.example.myapplication.NoScrollViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+
+
+
+    </LinearLayout>
+</layout>
